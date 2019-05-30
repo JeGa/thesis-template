@@ -1,0 +1,35 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{thesis-template}
+
+\RequirePackage{graphicx}
+\RequirePackage{fancyhdr}
+\RequirePackage{kvoptions}
+
+\SetupKeyvalOptions{
+	family=tt,
+	prefix=tt@
+}
+
+\DeclareStringOption[res]{logos}[res]
+\DeclareStringOption[my-config]{config}[my-config]
+
+\ProcessKeyvalOptions*
+
+% All the template related configurations.
+\frenchspacing
+\setlength\parindent{0pt}
+
+% TODO: Required?
+%\pagestyle{fancy}
+%\fancyhead[LE,RO]{1 header even}
+%\fancyhead[RE,LO]{2 header odd}
+%\fancyfoot[C]{\thepage}
+
+% User configuration.
+\input{\tt@config}
+
+% Provided commands.
+\newcommand{\logodir}{\tt@logos}
+\newcommand{\preface}{\input{preface}}
+
+\endinput

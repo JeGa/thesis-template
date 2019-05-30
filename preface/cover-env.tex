@@ -1,0 +1,37 @@
+\newenvironment{cover}{
+	{\centering
+	
+	\IfFileExists{\logodir/tum-logo.pdf}{
+		\includegraphics[width=5cm]{\logodir/tum-logo.pdf}
+	}{
+		\includegraphics[width=5cm]{example-image-a}
+	}
+	
+	\vspace{1cm}
+	
+	{\huge \textsc{\faculty}}
+	
+	\vspace{0.5cm}
+	
+	{\huge \textsc{\university}}
+	
+	\vspace{2cm}
+	
+	{\LARGE \degree \ \degreein}	
+	
+	\vspace{2cm}
+	
+	{\huge \textbf \titleEN}
+	
+	\par}
+}{
+	{\centering
+
+	\IfFileExists{\logodir/faculty-logo.pdf}{
+		\includegraphics[width=2cm]{\logodir/faculty-logo.pdf}
+	}{
+		\includegraphics[width=2cm]{example-image-a}
+	}
+	
+	\par}
+}
