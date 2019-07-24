@@ -2,13 +2,13 @@
 
 A template package following the TUM informatics thesis guidlines. It aims to be simple to use and extend, provinding only the preface pages required in the guidlines. All other configuration like page margins, headings, etc. are left to the user.
 
-*TUM informatics guidlines:* https://www.in.tum.de/fuer-studierende/pruefungen-und-formalitaeten/abschlussarbeit/
+**TUM informatics guidlines:** https://www.in.tum.de/fuer-studierende/pruefungen-und-formalitaeten/abschlussarbeit/
 
 There are also other thesis templates available, e.g. https://github.com/fwalch/tum-thesis-latex.
 
 ### Usage
 
-Copy `example-config.tex` as `my-config.tex` to your project directory and add your information. Find the TUM logos (mytum CI website) and copy them into some folder, e.g. `res/logos` as `tum-logo.pdf` and `faculty-logo.pdf`. Create `content/my-abstract.tex` and `content/my-acknowledgment.tex` with your abstract and acknowledgment. In your main tex file, use the thesis template package as shown in the following snippet.
+Copy `example-config.tex` as `my-config.tex` to your project directory and add your information. Find the TUM logos (e.g. from the mytum CI website) and copy them into some folder, e.g. `res/logos` as `tum-logo.pdf` and `faculty-logo.pdf`. Create `content/my-abstract.tex` and `content/my-acknowledgment.tex` with your abstract and acknowledgment. In your main tex file, use the thesis template package as shown in the following snippet.
 
 ```
 \documentclass[11pt,a4paper]{report}
