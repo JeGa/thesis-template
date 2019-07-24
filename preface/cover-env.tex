@@ -1,19 +1,19 @@
 \newenvironment{cover}{
 	{\centering
 	
-	\IfFileExists{\logodir/tum-logo.pdf}{
-		\includegraphics[width=5cm]{\logodir/tum-logo.pdf}
+	\IfFileExists{\tt@logos/tum-logo.pdf}{
+		\includegraphics[width=5cm]{\tt@logos/tum-logo.pdf}
 	}{
 		\includegraphics[width=5cm]{example-image-a}
 	}
 	
 	\vspace{1cm}
 	
-	{\huge \textsc{\faculty}}
+	\huge\textsc{\faculty}
 	
 	\vspace{0.5cm}
 	
-	{\huge \textsc{\university}}
+	\huge\textsc{\university}
 	
 	\vspace{2cm}
 	
@@ -21,14 +21,14 @@
 	
 	\vspace{2cm}
 	
-	{\huge \textbf \titleEN}
+	\huge{\textbf{\titleEN}}
 	
 	\par}
 }{
 	{\centering
 
-	\IfFileExists{\logodir/faculty-logo.pdf}{
-		\includegraphics[width=2cm]{\logodir/faculty-logo.pdf}
+	\IfFileExists{\tt@logos/faculty-logo.pdf}{
+		\includegraphics[width=2cm]{\tt@logos/faculty-logo.pdf}
 	}{
 		\includegraphics[width=2cm]{example-image-a}
 	}

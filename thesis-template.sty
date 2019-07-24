@@ -2,8 +2,10 @@
 \ProvidesPackage{thesis-template}
 
 \RequirePackage{graphicx}
-\RequirePackage{fancyhdr}
 \RequirePackage{kvoptions}
+\RequirePackage[a4paper]{geometry}
+
+\geometry{top=2.5cm,left=2.6cm,right=2.6cm}
 
 \SetupKeyvalOptions{
 	family=tt,
@@ -12,24 +14,19 @@
 
 \DeclareStringOption[res]{logos}[res]
 \DeclareStringOption[my-config]{config}[my-config]
+\DeclareStringOption[my-abstract]{abstract}[my-abstract]
+\DeclareStringOption[my-acknowledgment]{acknowledgment}[my-acknowledgment]
 
-\ProcessKeyvalOptions*
+\ProcessLocalKeyvalOptions*
 
 % All the template related configurations.
 \frenchspacing
-\setlength\parindent{0pt}
-
-% TODO: Required?
-%\pagestyle{fancy}
-%\fancyhead[LE,RO]{1 header even}
-%\fancyhead[RE,LO]{2 header odd}
-%\fancyfoot[C]{\thepage}
 
 % User configuration.
 \input{\tt@config}
 
 % Provided commands.
-\newcommand{\logodir}{\tt@logos}
 \newcommand{\preface}{\input{preface}}
+\newcommand{\toc}{\tableofcontents\pagenumbering{arabic}}
 
 \endinput
