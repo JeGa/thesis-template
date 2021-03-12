@@ -1,6 +1,6 @@
 ### thesis-template
 
-A template package following the TUM informatics thesis guidlines. It aims to be simple to use and extend, provinding only the preface pages required in the guidlines. All other configuration like page margins, headings, etc. are left to the user.
+A template package following the TUM informatics thesis guidlines. It aims to be simple to use and extend, providing only the preface pages required in the guidlines. All other configuration like page margins, headings, etc. are left to the user.
 
 **TUM informatics guidlines:** https://www.in.tum.de/fuer-studierende/pruefungen-und-formalitaeten/abschlussarbeit/
 
